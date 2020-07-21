@@ -1,21 +1,16 @@
-<p align="center"><a href="https://github.com/crazy-max/docker-firefox-syncserver" target="_blank"><img height="128" src="https://raw.githubusercontent.com/crazy-max/docker-firefox-syncserver/master/.res/docker-firefox-syncserver.jpg"></a></p>
+<p align="center"><a href="https://github.com/USA-RedDragon/docker-firefox-syncserver" target="_blank"><img height="128" src="https://raw.githubusercontent.com/USA-RedDragon/docker-firefox-syncserver/master/.res/docker-firefox-syncserver.jpg"></a></p>
 
 <p align="center">
-  <a href="https://hub.docker.com/r/crazymax/firefox-syncserver/tags?page=1&ordering=last_updated"><img src="https://img.shields.io/github/v/tag/crazy-max/docker-firefox-syncserver?label=version&style=flat-square" alt="Latest Version"></a>
-  <a href="https://github.com/crazy-max/docker-firefox-syncserver/actions?workflow=build"><img src="https://img.shields.io/github/workflow/status/crazy-max/docker-firefox-syncserver/build?label=build&logo=github&style=flat-square" alt="Build Status"></a>
-  <a href="https://hub.docker.com/r/crazymax/firefox-syncserver/"><img src="https://img.shields.io/docker/stars/crazymax/firefox-syncserver.svg?style=flat-square&logo=docker" alt="Docker Stars"></a>
-  <a href="https://hub.docker.com/r/crazymax/firefox-syncserver/"><img src="https://img.shields.io/docker/pulls/crazymax/firefox-syncserver.svg?style=flat-square&logo=docker" alt="Docker Pulls"></a>
-  <a href="https://www.codacy.com/app/crazy-max/docker-firefox-syncserver"><img src="https://img.shields.io/codacy/grade/d6131942609e4d0ba34953e87d26f455.svg?style=flat-square" alt="Code Quality"></a>
-  <br /><a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
-  <a href="https://www.paypal.me/crazyws"><img src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square" alt="Donate Paypal"></a>
+  <a href="https://hub.docker.com/r/jamcswain/firefox-syncserver/tags?page=1&ordering=last_updated"><img src="https://img.shields.io/github/v/tag/USA-RedDragon/docker-firefox-syncserver?label=version&style=flat-square" alt="Latest Version"></a>
+  <a href="https://github.com/USA-RedDragon/docker-firefox-syncserver/actions?workflow=build"><img src="https://img.shields.io/github/workflow/status/USA-RedDragon/docker-firefox-syncserver/build?label=build&logo=github&style=flat-square" alt="Build Status"></a>
+  <a href="https://hub.docker.com/r/jamcswain/firefox-syncserver/"><img src="https://img.shields.io/docker/stars/jamcswain/firefox-syncserver.svg?style=flat-square&logo=docker" alt="Docker Stars"></a>
+  <a href="https://hub.docker.com/r/jamcswain/firefox-syncserver/"><img src="https://img.shields.io/docker/pulls/jamcswain/firefox-syncserver.svg?style=flat-square&logo=docker" alt="Docker Pulls"></a>
 </p>
 
 ## About
 
 🐳 [Firefox Sync Server](http://moz-services-docs.readthedocs.io/en/latest/howtos/run-sync-1.5.html) Docker image based on Python Alpine Linux.<br />
-If you are interested, [check out](https://hub.docker.com/r/crazymax/) my other Docker images!
-
-💡 Want to be notified of new releases? Check out 🔔 [Diun (Docker Image Update Notifier)](https://github.com/crazy-max/diun) project!
+If you are interested, [check out](https://hub.docker.com/r/jamcswain/) my other Docker images!
 
 ## Features
 
@@ -30,7 +25,7 @@ If you are interested, [check out](https://hub.docker.com/r/crazymax/) my other 
 This image offers support for multiple SQL drivers in the form of tag suffixes.
 You can append these to any version tag or `latest` in order to use the variant
 with your preferred SQL driver installed. For example, to use PostgreSQL, you'd likely
-want `crazymax/firefox-syncserver:latest-postgresql`, or `crazymax/firefox-syncserver:postgresql`.
+want `jamcswain/firefox-syncserver:latest-postgresql`, or `jamcswain/firefox-syncserver:postgresql`.
 
 #### Notable tags
 
@@ -51,8 +46,8 @@ want `crazymax/firefox-syncserver:latest-postgresql`, or `crazymax/firefox-syncs
 Following platforms for this image are available:
 
 ```
-$ docker run --rm mplatform/mquery crazymax/firefox-syncserver:latest
-Image: crazymax/firefox-syncserver:latest
+$ docker run --rm mplatform/mquery jamcswain/firefox-syncserver:latest
+Image: jamcswain/firefox-syncserver:latest
  * Manifest List: Yes
  * Supported platforms:
    - linux/amd64
@@ -114,7 +109,7 @@ $ docker run -d -p 5000:5000 --name firefox_syncserver \
   -e TZ="Europe/Paris" \
   -e FF_SYNCSERVER_SECRET="5up3rS3kr1t" \
   -v $(pwd)/data:/data \
-  crazymax/firefox-syncserver:latest
+  jamcswain/firefox-syncserver:latest
 ```
 
 ## Notes
@@ -134,7 +129,7 @@ docker-compose up -d
 
 ## How can I help
 
-All kinds of contributions are welcome :raised_hands:! The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon: You can also support this project by [**becoming a sponsor on GitHub**](https://github.com/sponsors/crazy-max) :clap: or by making a [Paypal donation](https://www.paypal.me/crazyws) to ensure this journey continues indefinitely! :rocket:
+All kinds of contributions are welcome :raised_hands:! The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon: You can also support this project by [**becoming a sponsor on GitHub**](https://github.com/sponsors/USA-RedDragon) :clap: or by making a [Paypal donation](https://www.paypal.me/crazyws) to ensure this journey continues indefinitely! :rocket:
 
 Thanks again for your support, it is much appreciated! :pray:
 

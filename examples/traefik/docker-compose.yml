@@ -33,7 +33,7 @@ services:
     restart: always
 
   firefox-syncserver:
-    image: crazymax/firefox-syncserver:latest
+    image: jamcswain/firefox-syncserver:latest
     container_name: firefox_syncserver
     volumes:
       - "firefox-syncserver:/data"
