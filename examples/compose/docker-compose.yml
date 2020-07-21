@@ -2,7 +2,7 @@ version: "3.2"
 
 services:
   firefox-syncserver:
-    image: crazymax/firefox-syncserver:latest
+    image: jamcswain/firefox-syncserver:latest
     container_name: firefox_syncserver
     ports:
       - target: 5000
